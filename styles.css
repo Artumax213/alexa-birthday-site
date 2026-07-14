@@ -32,6 +32,9 @@ h1, h2, h3, h4, p {
     border-bottom-right-radius: 30px;
     box-shadow: 0 4px 15px rgba(89, 79, 141, 0.3);
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #header h1, #header h2, #header h4 {
@@ -44,23 +47,9 @@ h1, h2, h3, h4, p {
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid var(--light-periwinkle);
-    margin-bottom: 15px 0;
+    margin-bottom: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* #bday-age {
-    background: #EFB0C9;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0 10px 0;
-}
-
-#bday-date {
-    margin: 0;
-    background: #EFB0C9;
-    padding: 5px 10px;
-    border-radius: 5px;
-} */
 
 #bday-age, #bday-date {
     background: rgba(255, 255, 255, 0.2);
@@ -70,14 +59,8 @@ h1, h2, h3, h4, p {
     margin: 5px;
 }
 
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .gift-section {
-    margin-top: 50px;
     background-color: var(--white);
     max-width: 600px;
     width: 90%;
@@ -93,6 +76,8 @@ h1, h2, h3, h4, p {
 
 .gift-hint {
     margin-top: 0;
+    font-size: 1rem;
+    color: var(--soft-periwinkle);
 }
 
 #gift-img-cheers {
@@ -110,6 +95,19 @@ h1, h2, h3, h4, p {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     position: relative;
+    outline: none;
+    cursor: pointer;
+
+}
+
+/* Hover & Accesibilidad por teclado (Focus) */
+.gift-img:hover .gift-cover,
+.gift-img:focus .gift-cover {
+    opacity: 0;
+}
+.gift-img:focus {
+    border-color: var(--dusty-grape);
+    box-shadow: 0 0 0 4px rgba(89, 79, 141, 0.4);
 }
 
 .gift-cover{
@@ -120,7 +118,7 @@ h1, h2, h3, h4, p {
     height: 100%;
     border-radius: 4px;
     background-image: url(images/gift-cover.jpg);
-    transform: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
     background-size: cover;
 }
 
@@ -128,69 +126,50 @@ h1, h2, h3, h4, p {
     background-image: url("images/happy.gif");
 }
 
-#gift-img-cat:hover {
+#gift-img-cat:hover, #gift-img-cat:focus{
     background-image: url("images/cat-meme-dancing.gif");
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-color: #EFB0C9;
 }
 
-#gift-img-bb-sb {
+#gift-img-bb-sb:hover, #gift-img-bb-sb:focus{
     background-image: url("images/bad-bunny-super-bowl-dancing.gif");
 }
 
-.gift-img:hover .gift-cover {
-    /* ¿Qué escribirías aquí adentro? */
-    opacity: 0;
-}
-
-#gift-img-dance-fb:hover {
+#gift-img-dance-fb:hover, #gift-img-dance-fb:focus  {
     background-image: url("images/dance-football.gif");
 }
 
-#gift-img-lionel-messi:hover {
+#gift-img-lionel-messi:hover, #gift-img-lionel-messi:focus {
     background-image: url("images/lionel_messi.gif");
 }
 
-#gift-img-mc-agree:hover {
+#gift-img-mc-agree:hover, #gift-img-mc-agree:focus {
     background-image: url("images/michael-caine-agree.gif");
 }
 
 
-
-#gift-img-hot:hover{
-    background-image: url("images/hot.gif");
-}
-
-#gift-img-genius:hover {
-    background-image: url("images/genius.gif");
-}
-
-#gift-img-badass:hover {
-    background-image: url("images/badass.gif");
-}
-
-#gift-img-cheers:hover {
-    background-image: url("images/cheers.gif");
-}
-
 #site-footer {
-    font-style: italic;
-    width: 400px;
-    margin: 40px auto 20px;
+    margin: 60px auto 20px;
+    padding: 20px;
     text-align: center;
-    font-family: 'Happy Monkey', cursive;
-    background-color: var(--lavender);
     color: var(--dusty-grape);
-    margin: 0;
     padding: 10px 0 40px 0;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    max-width: 500px;
+    width: 90%;
+    background-color: var(--alabaster-grey);
+    border-radius: 10px;
 
 }
 
 a {
-    color: var(--dusty-grape);
+    color: var(--soft-periwinkle);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 
