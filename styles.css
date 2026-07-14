@@ -1,5 +1,5 @@
 :root {
-    /* Nueva paleta basada en image_a6ae6b.png */
+
     --dusty-grape: #594f8d;
     --soft-periwinkle: #7e7cc7;
     --light-periwinkle: #908dda;
@@ -149,12 +149,19 @@ h1, h2, h3, h4, p {
 }
 
 
-#site-footer {
+a {
+    color: var(--soft-periwinkle);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer {
     margin: 60px auto 20px;
     padding: 20px;
     text-align: center;
     color: var(--dusty-grape);
-    padding: 10px 0 40px 0;
+    padding: 10px 5px;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -163,13 +170,6 @@ h1, h2, h3, h4, p {
     background-color: var(--alabaster-grey);
     border-radius: 10px;
 
-}
-
-a {
-    color: var(--soft-periwinkle);
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 
