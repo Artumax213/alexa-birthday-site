@@ -1,0 +1,196 @@
+:root {
+    /* Nueva paleta basada en image_a6ae6b.png */
+    --dusty-grape: #594f8d;
+    --soft-periwinkle: #7e7cc7;
+    --light-periwinkle: #908dda;
+    --lavender: #ececfc;
+    --alabaster-grey: #dadbdb;
+
+    --white: #ffffff;
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background-color: var(--lavender);
+    color: var(--dusty-grape);
+    margin: 0;
+    padding: 10px 0 40px 0;
+}
+
+h1, h2, h3, h4, p {
+    /* text-shadow: 0 2px 4px rgba(237, 214, 214, 0.5); */
+    color: var(--dusty-grape);
+}
+
+#header {
+    background: linear-gradient(135deg, var(--dusty-grape), var(--soft-periwinkle));
+    color: var(--white);
+    padding: 40px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 15px rgba(89, 79, 141, 0.3);
+    margin-bottom: 50px;
+}
+
+#header h1, #header h2, #header h4 {
+    color: var(--white);
+}
+
+#mvp-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--light-periwinkle);
+    margin-bottom: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* #bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+} */
+
+#bday-age, #bday-date {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+    background-color: var(--white);
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(89, 79, 141, 0.1);
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.gift-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(images/gift-cover.jpg);
+    transform: opacity 0.5s ease;
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/happy.gif");
+}
+
+#gift-img-cat:hover {
+    background-image: url("images/cat-meme-dancing.gif");
+    transform: scale(1.1);
+    border-color: #EFB0C9;
+}
+
+#gift-img-bb-sb {
+    background-image: url("images/bad-bunny-super-bowl-dancing.gif");
+}
+
+.gift-img:hover .gift-cover {
+    /* ¿Qué escribirías aquí adentro? */
+    opacity: 0;
+}
+
+#gift-img-dance-fb:hover {
+    background-image: url("images/dance-football.gif");
+}
+
+#gift-img-lionel-messi:hover {
+    background-image: url("images/lionel_messi.gif");
+}
+
+#gift-img-mc-agree:hover {
+    background-image: url("images/michael-caine-agree.gif");
+}
+
+
+
+#gift-img-hot:hover{
+    background-image: url("images/hot.gif");
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/genius.gif");
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/badass.gif");
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif");
+}
+
+#site-footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background-color: var(--lavender);
+    color: var(--dusty-grape);
+    margin: 0;
+    padding: 10px 0 40px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+a {
+    color: var(--dusty-grape);
+}
+
+
